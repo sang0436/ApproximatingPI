@@ -48,11 +48,11 @@ class DrawPanel extends JPanel {
 	
 			double pi = 4.0 * ((double)circle / (double)total);
 			double recordDiff = Math.abs(Math.PI - recordPI);
-		    double diff = Math.abs(Math.PI - pi);
-		    if (diff < recordDiff) {
-		      recordDiff = diff;
-		      recordPI = pi;
-		    }
+		    	double diff = Math.abs(Math.PI - pi);
+		    	if (diff < recordDiff) {
+		      		recordDiff = diff;
+		      		recordPI = pi;
+		    	}
 			System.out.println(recordPI);
 		}
 	}
